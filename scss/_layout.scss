@@ -1,0 +1,69 @@
+/******************GENERAL RULES******************/
+body {
+  overflow-x: hidden;
+}
+
+body.container-fluid {
+  font-family: $content-font;
+  padding: 0;
+  margin: 0;
+}
+
+/******************HEADER / BANNER SECTIONS******************/
+header.row {
+  display: flex;
+  background: $caribbeangreen;
+  align-items: center;
+  border: $jet 2px solid;
+  height: 10rem;
+
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+
+.account-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    margin-bottom: 2rem;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80%;
+    height: 25rem;
+  }
+}
+
+
+/******************FOOTER SECTION******************/
+
+footer {
+  padding: 2rem;
+  background-color: $caribbeangreen;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: black;
+    }
+  }
+  .social-media-links {
+    font-size: 4rem;
+    i {
+      &:hover {
+        color: $bleudefrance;
+      }
+    }
+  }
+}
+

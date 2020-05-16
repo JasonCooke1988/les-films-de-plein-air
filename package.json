@@ -1,0 +1,24 @@
+{
+  "name": "les-films-de-plein-air",
+  "version": "1.0.0",
+  "description": "les-films-de-plein-air",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch scss -o css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonCooke1988/les-films-de-plein-air.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonCooke1988/les-films-de-plein-air/issues"
+  },
+  "homepage": "https://github.com/JasonCooke1988/les-films-de-plein-air#readme"
+}

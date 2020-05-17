@@ -15,7 +15,10 @@ header.row {
   background: $caribbeangreen;
   align-items: center;
   border: $jet 2px solid;
-  height: 10rem;
+  height: 8rem;
+  img.logo {
+    height: 7rem;
+  }
 
 }
 
@@ -38,27 +41,31 @@ header.row {
   display: flex;
   justify-content: center;
   img {
-    width: 80%;
-    height: 25rem;
+    width: 100%;
+    height: 20rem;
   }
 }
 
 
 /******************FOOTER SECTION******************/
 
-footer {
-  padding: 2rem;
-  background-color: $caribbeangreen;
+footer.row {
+  padding: 1rem;
+  background-color: $jet;
+  font-size: 1.25rem;
+  color: $honeydew;
+  display: flex;
+  align-items: center;
 
   .links {
     display: flex;
     flex-direction: column;
     a {
-      color: black;
+      color: $honeydew;
     }
   }
   .social-media-links {
-    font-size: 4rem;
+    font-size: 3rem;
     i {
       &:hover {
         color: $bleudefrance;

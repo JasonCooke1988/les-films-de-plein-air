@@ -1,23 +1,31 @@
 /******************GENERAL RULES******************/
-body {
-  overflow-x: hidden;
-}
-
 body.container-fluid {
   font-family: $content-font;
   padding: 0;
-  margin: 0;
+  overflow-x: hidden;
+}
+
+h4 {
+  font-family: $title-font;
 }
 
 /******************HEADER / BANNER SECTIONS******************/
 header.row {
   display: flex;
-  background: $caribbeangreen;
+  background: $bleudefrance;
   align-items: center;
   border: $jet 2px solid;
   height: 8rem;
+  @media(max-device-width: $mobile-max-bp) {
+    height: 20rem;
+    font-size: 30Px;
+  }
+
   img.logo {
-    height: 7rem;
+    height: 9rem;
+    @media(max-device-width: $mobile-max-bp) {
+      font-size: 32px;
+    }
   }
 
 }
@@ -31,6 +39,10 @@ header.row {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media(max-device-width: $mobile-max-bp) {
+    text-align: center;
+    float: right;
+  }
 
   a {
     margin-bottom: 2rem;
@@ -38,39 +50,153 @@ header.row {
 }
 
 .banner {
-  display: flex;
-  justify-content: center;
-  img {
-    width: 100%;
-    height: 20rem;
+  background: url("../assets/images/newbanner.png") no-repeat center center;
+  background-size: 100% 100%;
+  height: 30rem;
+}
+
+/******************PRESENTATION SECTION******************/
+
+.presentation {
+  margin: 3rem 0 3rem 0;
+
+  &__content {
+    background: $honeydew;
+    border: $bleudefrance 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    @media(max-device-width: $mobile-max-bp) {
+      font-size: 34px;
+      border: $bleudefrance 1px solid;
+      text-align: center;
+    }
   }
 }
 
 
-/******************FOOTER SECTION******************/
+/******************FILMS SECTION******************/
 
-footer.row {
-  padding: 1rem;
-  background-color: $jet;
-  font-size: 1.25rem;
-  color: $honeydew;
-  display: flex;
-  align-items: center;
+.films {
+  &__content {
+    background: $honeydew;
+    border: $bleudefrance 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    display: flex;
+    overflow-x: scroll;
+  }
 
-  .links {
+  &__single {
     display: flex;
     flex-direction: column;
-    a {
-      color: $honeydew;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 7rem 0 7rem;
+    @media(max-device-width: $mobile-max-bp) {
+      font-size: 32px;
+      padding: 0 30rem 0 30rem;
+
     }
-  }
-  .social-media-links {
-    font-size: 3rem;
-    i {
-      &:hover {
-        color: $bleudefrance;
+    h4 {
+      @media(max-device-width: $mobile-max-bp) {
+        font-size: 32px;
+      }
+    }
+    img {
+      max-height: 10rem;
+      margin: 2rem 0 2rem 0;
+      @media(max-device-width: $mobile-max-bp) {
+        max-height: 35rem;
       }
     }
   }
 }
+
+/******************NEWS SECTION******************/
+
+.news {
+  margin-top: 3rem;
+  &__content {
+    background: $honeydew;
+    border: $bleudefrance 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  &__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 4rem;
+    padding: 0 5rem 2rem 5rem;
+    border: $jet 2px solid;
+    background: $caribbeangreen;
+    position: relative;
+    @media(max-device-width: $mobile-max-bp) {
+      font-size: 32px;
+      padding: 0 10rem 2rem 10rem;
+      margin: 5rem 19rem 5rem 19rem;
+    }
+    .news-full-link {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    h4 {
+      @media(max-device-width: $mobile-max-bp) {
+        font-size: 32px;
+      }
+    }
+    img {
+      max-height: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  }
+}
+
+  /******************FOOTER SECTION******************/
+
+  footer.row {
+    padding: 1rem;
+    background-color: $jet;
+    font-size: 1.25rem;
+    color: $honeydew;
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    @media(max-device-width: $mobile-max-bp) {
+      font-size: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: $honeydew;
+        padding: .5rem 0 .5rem 0;
+        @media(max-device-width: $mobile-max-bp) {
+          padding: 1rem 0 1rem 0;
+        }
+      }
+    }
+
+    .social-media-links {
+      font-size: 3rem;
+      @media(max-device-width: $mobile-max-bp) {
+        font-size: 42px;
+      }
+
+      i {
+        &:hover {
+          color: $bleudefrance;
+        }
+      }
+    }
+  }
 

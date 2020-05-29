@@ -80,12 +80,16 @@ header.row {
 
   &__content {
     background: $honeydew;
-    border: $bleudefrance 2px solid;
+    border: $jet 2px solid;
     border-radius: 10px;
-    box-shadow: 3px 3px;
+    box-shadow: 1px 1px;
+    color: grey;
+    p{
+      color: black;
+    }
+
     @media(max-device-width: $mobile-max-bp) {
       font-size: 34px;
-      border: $bleudefrance 1px solid;
       text-align: center;
     }
     @media(min-device-width: $tablet-min-bp) and (max-device-width: $tablet-max-bp) {
@@ -100,14 +104,16 @@ header.row {
 .films {
   &__content {
     background: $honeydew;
-    border: $bleudefrance 2px solid;
+    border: $jet 2px solid;
     border-radius: 10px;
-    box-shadow: 3px 3px;
+    box-shadow: 1px 1px;
+    color: grey;
     display: flex;
     overflow-x: scroll;
   }
 
   &__single {
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,14 +158,16 @@ header.row {
 
   &__content {
     background: $honeydew;
-    border: $bleudefrance 2px solid;
+    border: $jet 2px solid;
     border-radius: 10px;
-    box-shadow: 3px 3px;
+    box-shadow: 1px 1px;
+    color: grey;
     display: flex;
     overflow-x: scroll;
   }
 
   &__single {
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
